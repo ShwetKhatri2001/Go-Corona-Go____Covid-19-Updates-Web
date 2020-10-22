@@ -1,0 +1,389 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Nunito', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+/**** navbar-styles *******/
+
+.nav_style{
+     background-color: #3366ff!important;
+
+}
+
+.nav_style a{
+	color : white;text-align: center;
+}
+
+.nav_style a:hover:not(.navbar-brand){
+	background-color: white;
+	color:#3366ff!important;
+}
+
+.navbar button.navbar-toggler{
+	border :1px solid white;
+}
+
+.navbar button.navbar-toggler:hover{
+	border :1px solid #3366ff;
+	background-color: white;
+}
+
+.nav_style span.navbar-toggler-icon{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	
+}
+
+.nav_style span.navbar-toggler-icon:hover{
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='blue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	
+}
+
+
+.navbar-brand:hover{
+    font-size: 1.5em;
+    padding:0;margin:0;
+}
+ 
+
+
+}
+#navlist span{
+	margin-bottom:2px;
+}
+
+/**** main-header styles ****/
+
+.main-header{
+	height : 450px;
+	width : 100%;
+}
+
+.rightside{
+	font-size:3rem;
+}
+
+.corona_rotate img{
+	border-radius: 50%;
+	animation : rot_corona 3s linear infinite;
+}
+
+@keyframes rot_corona {
+    0% {transform : rotate(0); }
+    100% {transform : rotate(360deg);}
+}
+
+.leftside img{
+	animation: heartbeat 5s linear infinite;
+}
+
+@keyframes heartbeat{
+   
+   0% {transform : scale(.75);}
+   20%{transform: scale(1);}
+   40% {transform : scale(.75);}
+   60%{transform: scale(1);}
+   80% {transform : scale(.75);}
+   100%{transform: scale(.75);}
+}
+
+/***** corona-updates styles *****/
+
+.corona_update{
+	margin: 0 0 30px 0;
+}
+
+.corona_update h3{
+	color : #ff7675;
+}
+
+.corona_update h1{
+   font-size : 2rem; 
+   text-align:center;
+}
+
+table{
+	display:none;
+}
+
+
+.table_styles{
+     margin:0 auto;
+}
+
+.country{
+  color:white;
+  background-color:#cc0066;
+}
+.confirmed{
+  background-color:#ffdb4d;
+}
+.recovered{
+ background-color: #85e085;
+}
+.deaths{
+	background-color: #ff6666;
+
+}
+.norecord{
+	color:#f6f6f6;
+  background-color:#2e2e1f;
+
+}
+
+.updatetime{
+	background-color: #00e6e6;
+}
+.curactive{
+	background-color: #00e6e6;
+}
+
+.daysdata{
+	width:80%;
+	padding:0 auto;
+}
+.search input{
+  width:200px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-image: url('images/searchicon.png');
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 7px 7px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+
+}
+
+.search input:focus{
+	width:60%;
+}
+
+.searchbtn{
+	border-radius:5px;
+	color:white;
+	background-color:#4d79ff;
+	cursor:pointer;
+	padding:5px;
+	box-shadow: 0 9px #999;
+	margin:15px auto;
+	
+}
+
+.searchbtn:hover {background-color: #1a53ff;}
+
+.searchbtn:active{
+	box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/***** About Corona styles ****/
+
+#sub_section{
+	background-color: #f6f6f6;
+}
+
+.section_header{
+	color:#f6f6f6;
+  background-color:#2e2e1f;
+}
+
+
+/****** Contact Form ********/
+
+.form-group label{
+	display: inline-block;
+	margin-bottom:5px;
+	font-size:16px;
+}
+
+.form-group{
+	position:relative;
+}
+
+.form-group input{
+    border:2px solid #f0f0f0;
+    border-radius:5px;
+    display:block;
+    font-size:14px;
+    padding:9px;
+}
+
+.form-group input:focus{
+	outline: 0;
+	border-color : #777;
+}
+
+.form-group.success input{
+    border-color: #3366ff;
+}
+
+.form-group.error input{
+	border-color: #e74c3c;
+}
+
+.form-group i{
+	position: absolute;
+	right:12px;
+	top:42px;
+	visibility: hidden;
+}
+
+
+.form-group.success i.fa-check-circle{
+	color: #3366ff;
+    visibility:visible;
+}
+
+.form-group.error i.fa-exclamation-circle{
+	color:#e74c3c;
+	visibility:visible;
+}
+
+.form-group small{
+	color:#e74c3c;
+	position: absolute;
+	left:0;
+	visibility: hidden;
+}
+
+.form-group.error small{
+    visibility:visible;
+}
+/******* Developer's Contact ********/
+
+.mypic{
+	   border-radius: 70%;
+	   width:70%;
+	   height:80%;
+	   padding-top:20px;
+}
+
+
+.container-fluid .fa{
+     margin: 5px;
+     font-size: 50px;
+
+    
+}
+
+.container-fluid .fa-github{
+	text-align:center;
+	color:#33331A;
+	height:50px;width:48px;
+	background-color: #e6e6e6;
+    border-radius: 70% ;
+    
+}
+
+.container-fluid .fa-github:hover {
+	color:#1a1a1a;
+	background-color:white;
+}
+
+
+.container-fluid .fa-linkedin-square:hover{
+	color:#1a1aff;
+	background-color:white;
+}
+
+.container-fluid .fa-envelope:hover{
+	background-color:#ff3333;
+	color:white;
+}
+.container-fluid .fa-linkedin-square{
+	text-align:center;
+	color:#3366ff;height:48px;width:48px;
+	background-color: #e6e6e6;
+	border-radius: 20% ;
+
+}
+
+.container-fluid .fa-envelope{
+	color:#e6e6e6;
+	text-align:center;
+	height:50px;width:54px;
+	background-color: #ff5555;
+	border-radius: 10% ;
+
+}
+
+
+/******* footer *******/
+
+.footer_style{
+	background-color: #3366ff !important;
+}
+
+.footer_style p{
+    margin-bottom: 0!important ;
+}
+
+/****** Top scroll styles ******/
+
+#toptext{
+	display:none;
+	color:#3366ff;
+	width:1px;
+	position:fixed;
+	bottom:10px;
+	right:30px;
+}
+
+#topbtn{
+	display:none;
+	position:fixed;
+	bottom:250px;
+	right:10px;
+	z-index:99;
+	border:none;
+	outline:none;
+	background-color: #3366ff;
+	color:white;
+	cursor:pointer;
+	padding:10px;
+	border-radius:10px;
+}
+
+#topbtn:hover{
+	background: white;
+	color:#3366ff;
+	border:2px solid #3366ff;
+
+}
+
+/********* Responsiveness **********/
+@media(max-width: 768px){
+	.main_header{height:500px; text-align:center;}
+
+	.main_header h1{
+                text-align:center;
+                padding:0;
+                width:100%;
+                font-size: 30px;}
+    .count_style{
+               display:inline!important;
+    }
+    .count_style p{
+    	       text-align:center;
+    }
+	
+	.img_res{
+		    margin-top: 20px;
+		    margin-bottom: 0;
+	}
+
+	.search input:focus{
+	width:80%;
+    }
+}
+
+
